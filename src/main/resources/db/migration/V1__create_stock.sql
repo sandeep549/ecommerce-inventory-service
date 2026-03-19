@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS stock (
+    id         BIGSERIAL PRIMARY KEY,
+    product_id BIGINT NOT NULL UNIQUE,
+    quantity   INTEGER NOT NULL DEFAULT 0
+);
